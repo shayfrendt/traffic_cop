@@ -12,13 +12,19 @@ http://www.viget.com/extend/test-drive-mod-rewrite-rules-with-testunit/
 
 == Examples
 
-class ExampleRedirectTest < HTTPRedirectTest
-  self.domain = 'example.com'
-  
-  should_redirect '/blog/', :to => '/blog/posts/'
-  should_redirect '/archives/*', :to => '/categories/*'
-  should_not_redirect '/'
-end
+In your test cases, simply inherit from HTTPRedirectTest:
+
+    class ExampleRedirectTest < HTTPRedirectTest
+      self.domain = 'example.com'
+      
+      should_redirect '/blog/', :to => '/blog/posts/'
+      should_redirect '/archives/*', :to => '/categories/*'
+      should_not_redirect '/'
+    end
+
+== TODO
+
+* Add RSpec macros (currently the macros are for Test::Unit)
 
 == Contributing to traffic_cop
  
