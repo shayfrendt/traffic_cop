@@ -1,6 +1,9 @@
-= traffic_cop
+= TrafficCop
 
-Description goes here.
+TrafficCop is a collection of test macros to test HTTP redirect rules for remote servers. The TrafficCop enforces the rules - obey him!
+
+Inspired by Patrick Reagan of Viget Labs:
+http://www.viget.com/extend/test-drive-mod-rewrite-rules-with-testunit/
 
 == Contributing to traffic_cop
  
