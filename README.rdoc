@@ -5,6 +5,21 @@ TrafficCop is a collection of test macros to test HTTP redirect rules for remote
 Inspired by Patrick Reagan of Viget Labs:
 http://www.viget.com/extend/test-drive-mod-rewrite-rules-with-testunit/
 
+= Installation
+
+    gem install traffic_cop
+    require 'traffic_cop'
+
+== Examples
+
+class ExampleRedirectTest < HTTPRedirectTest
+  self.domain = 'example.com'
+  
+  should_redirect '/blog/', :to => '/blog/posts/'
+  should_redirect '/archives/*', :to => '/categories/*'
+  should_not_redirect '/'
+end
+
 == Contributing to traffic_cop
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
