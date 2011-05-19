@@ -1,3 +1,5 @@
+require 'test/unit'
+
 class HTTPRedirectTest < Test::Unit::TestCase
   
   def default_test; end  # placeholder to stop Test::Unit from complaining
