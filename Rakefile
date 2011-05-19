@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "traffic_cop"
   gem.homepage = "http://github.com/shayfrendt/traffic_cop"
   gem.license = "MIT"
-  gem.summary = %Q{TrafficCop tests HTTP redirect rules on remote web servers}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{TrafficCop is a collection of test macros to test HTTP redirect rules for remote servers.}
+  gem.description = %Q{TrafficCop is a collection of test macros to test HTTP redirect rules for remote servers.}
   gem.email = "shay.frendt@gmail.com"
   gem.authors = ["Shay Frendt"]
   # dependencies defined in Gemfile
